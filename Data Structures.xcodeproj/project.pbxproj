@@ -18,6 +18,7 @@
 		AB09A2EC29608586000CDF04 /* Data_StructuresUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB09A2EB29608586000CDF04 /* Data_StructuresUITestsLaunchTests.swift */; };
 		AB09A2FC2960876F000CDF04 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB09A2FB2960876F000CDF04 /* MainView.swift */; };
 		AB09A2FE296089E6000CDF04 /* LinearSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB09A2FD296089E6000CDF04 /* LinearSearchView.swift */; };
+		AB09A3012960A46E000CDF04 /* LinearSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB09A3002960A46E000CDF04 /* LinearSearchViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		AB09A2EB29608586000CDF04 /* Data_StructuresUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data_StructuresUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AB09A2FB2960876F000CDF04 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		AB09A2FD296089E6000CDF04 /* LinearSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearSearchView.swift; sourceTree = "<group>"; };
+		AB09A3002960A46E000CDF04 /* LinearSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearSearchViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				AB09A2F8296085CE000CDF04 /* CoreData */,
-				AB09A2F9296085DD000CDF04 /* Views */,
+				AB09A2F9296085DD000CDF04 /* MVVM */,
 				AB09A2CD29608586000CDF04 /* Assets.xcassets */,
 				AB09A2CF29608586000CDF04 /* Preview Content */,
 			);
@@ -144,7 +146,7 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
-		AB09A2F9296085DD000CDF04 /* Views */ = {
+		AB09A2F9296085DD000CDF04 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
 				AB09A2FA2960875B000CDF04 /* Data Structures */,
@@ -152,15 +154,24 @@
 				AB09A2CB29608585000CDF04 /* ContentView.swift */,
 				AB09A2FB2960876F000CDF04 /* MainView.swift */,
 			);
-			path = Views;
+			path = MVVM;
 			sourceTree = "<group>";
 		};
 		AB09A2FA2960875B000CDF04 /* Data Structures */ = {
 			isa = PBXGroup;
 			children = (
-				AB09A2FD296089E6000CDF04 /* LinearSearchView.swift */,
+				AB09A2FF2960A3E4000CDF04 /* Linear Search */,
 			);
 			path = "Data Structures";
+			sourceTree = "<group>";
+		};
+		AB09A2FF2960A3E4000CDF04 /* Linear Search */ = {
+			isa = PBXGroup;
+			children = (
+				AB09A2FD296089E6000CDF04 /* LinearSearchView.swift */,
+				AB09A3002960A46E000CDF04 /* LinearSearchViewModel.swift */,
+			);
+			path = "Linear Search";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB09A3012960A46E000CDF04 /* LinearSearchViewModel.swift in Sources */,
 				AB09A2D329608586000CDF04 /* Persistence.swift in Sources */,
 				AB09A2FE296089E6000CDF04 /* LinearSearchView.swift in Sources */,
 				AB09A2D629608586000CDF04 /* Data_Structures.xcdatamodeld in Sources */,
