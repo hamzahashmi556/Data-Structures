@@ -8,14 +8,12 @@
 import Foundation
 
 class LinearSearchViewModel: ObservableObject {
-    @Published var title: String
     @Published var dataEntry = ""
     @Published var data: [Int] = []
     @Published var numberToSearch = ""
     @Published var resultMessage = ""
     
-    init(title: String, dataEntry: String = "", data: [Int], numberToSearch: String = "", resultMessage: String = "") {
-        self.title = title
+    init(dataEntry: String = "", data: [Int] = [], numberToSearch: String = "", resultMessage: String = "") {
         self.dataEntry = dataEntry
         self.data = data
         self.numberToSearch = numberToSearch

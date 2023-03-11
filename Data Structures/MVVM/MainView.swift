@@ -12,34 +12,36 @@ let height = UIScreen.main.bounds.height
 
 struct MainView: View {
     var body: some View {
-        NavigationView {
-            List {
-                Section {
+        List {
+            Section {
+                NavigationLink {
+                    LinearSearchView()
+                } label: {
                     NavigationRow(title: "Linear Search")
+                }
+                
+                NavigationLink {
+                    BinarySearchView()
+                } label: {
                     NavigationRow(title: "Binary Search")
                 }
                 
-                Section {
-                    NavigationRow(title: "Bubble Sort")
-                    NavigationRow(title: "Insertion Sort")
-                    NavigationRow(title: "Merge Sort")
-                    NavigationRow(title: "Quick Sort")
-                }
-                
             }
+            
+            Section {
+                NavigationRow(title: "Bubble Sort")
+                NavigationRow(title: "Insertion Sort")
+                NavigationRow(title: "Merge Sort")
+                NavigationRow(title: "Quick Sort")
+            }
+            
         }
         .navigationTitle("Data Structures")
-        
     }
     
     func NavigationRow(title: String) -> some View {
-        NavigationLink {
-            Text(title)
-        } label: {
             Text(title)
                 .font(Font.system(size: 20, weight: .bold))
-        }
-
     }
 }
 

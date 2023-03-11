@@ -9,13 +9,13 @@ import SwiftUI
 
 struct LinearSearchView: View {
     
-    @ObservedObject var viewModel: LinearSearchViewModel
+    @ObservedObject var viewModel = LinearSearchViewModel()
     
     var body: some View {
-        
-        NavigationView {
-            
+                    
             ScrollView {
+                
+                withAnimation {
                 
                 VStack() {
                     
@@ -75,15 +75,13 @@ struct LinearSearchView: View {
                     }
                 }
             }
-            .navigationTitle(viewModel.title)
+            .navigationTitle("Linear Search")
         }
     }
-    
-    
 }
 
 struct LinearSearchView_Previews: PreviewProvider {
     static var previews: some View {
-        LinearSearchView(viewModel: LinearSearchViewModel(title: "Linear Search", data: []))
+        LinearSearchView(viewModel: LinearSearchViewModel())
     }
 }

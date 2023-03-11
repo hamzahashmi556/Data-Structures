@@ -19,6 +19,8 @@
 		AB09A2FC2960876F000CDF04 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB09A2FB2960876F000CDF04 /* MainView.swift */; };
 		AB09A2FE296089E6000CDF04 /* LinearSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB09A2FD296089E6000CDF04 /* LinearSearchView.swift */; };
 		AB09A3012960A46E000CDF04 /* LinearSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB09A3002960A46E000CDF04 /* LinearSearchViewModel.swift */; };
+		AB09A3052960FFB5000CDF04 /* BinarySearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB09A3042960FFB5000CDF04 /* BinarySearchView.swift */; };
+		AB09A3072960FFBF000CDF04 /* BinarySearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB09A3062960FFBF000CDF04 /* BinarySearchViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		AB09A2FB2960876F000CDF04 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		AB09A2FD296089E6000CDF04 /* LinearSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearSearchView.swift; sourceTree = "<group>"; };
 		AB09A3002960A46E000CDF04 /* LinearSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearSearchViewModel.swift; sourceTree = "<group>"; };
+		AB09A3042960FFB5000CDF04 /* BinarySearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchView.swift; sourceTree = "<group>"; };
+		AB09A3062960FFBF000CDF04 /* BinarySearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				AB09A2FF2960A3E4000CDF04 /* Linear Search */,
+				AB09A3032960FF9E000CDF04 /* Binary Search */,
 			);
 			path = "Data Structures";
 			sourceTree = "<group>";
@@ -172,6 +177,15 @@
 				AB09A3002960A46E000CDF04 /* LinearSearchViewModel.swift */,
 			);
 			path = "Linear Search";
+			sourceTree = "<group>";
+		};
+		AB09A3032960FF9E000CDF04 /* Binary Search */ = {
+			isa = PBXGroup;
+			children = (
+				AB09A3042960FFB5000CDF04 /* BinarySearchView.swift */,
+				AB09A3062960FFBF000CDF04 /* BinarySearchViewModel.swift */,
+			);
+			path = "Binary Search";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,8 +323,10 @@
 				AB09A2FE296089E6000CDF04 /* LinearSearchView.swift in Sources */,
 				AB09A2D629608586000CDF04 /* Data_Structures.xcdatamodeld in Sources */,
 				AB09A2CC29608585000CDF04 /* ContentView.swift in Sources */,
+				AB09A3072960FFBF000CDF04 /* BinarySearchViewModel.swift in Sources */,
 				AB09A2FC2960876F000CDF04 /* MainView.swift in Sources */,
 				AB09A2CA29608585000CDF04 /* Data_StructuresApp.swift in Sources */,
+				AB09A3052960FFB5000CDF04 /* BinarySearchView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
